@@ -1,4 +1,6 @@
-import Register from "./components/Register";
+import Login from "../src/pages/Login";
+import Register from "./pages/Register";
+
 function App() {
   return (
     <div className="App">
