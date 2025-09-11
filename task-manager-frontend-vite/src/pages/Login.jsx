@@ -10,10 +10,10 @@ export default function Login() {
   }
 
   return (
-    <div>
-      <form>
-        <h2>Login Form</h2>
-        <label>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <form className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 space-y-6">
+        <h2 className="text-3xl font-bold text-gray-800 text-center">Login </h2>
+        <label className="block text-gray-700">
           Username:
           <input
             onChange={(e) => setUsername(e.target.value)}
@@ -21,9 +21,10 @@ export default function Login() {
             type="text"
             placeholder="username"
             name="username-login"
+            className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
           />
         </label>
-        <label>
+        <label className="block text-gray-700">
           Password:
           <input
             onChange={(e) => setPassword(e.target.value)}
@@ -31,9 +32,14 @@ export default function Login() {
             type="password"
             placeholder="password"
             name="password-login"
+            className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
           />
         </label>
-        <button onClick={(e) => handleSubmit(e)} type="submit">
+        <button
+          className="w-full p-3 bg-blue-500 text-white rounded-md font-semibold hover:bg-blue-600 transition-colors"
+          onClick={(e) => handleSubmit(e)}
+          type="submit"
+        >
           Login
         </button>
       </form>
