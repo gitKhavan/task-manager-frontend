@@ -19,7 +19,7 @@ export default function Login() {
             onChange={(e) => setUsername(e.target.value)}
             value={username}
             type="text"
-            placeholder="username"
+            placeholder="Enter Username:"
             name="username-login"
             className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
           />
@@ -30,7 +30,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             type="password"
-            placeholder="password"
+            placeholder="Enter Password:"
             name="password-login"
             className="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
           />
